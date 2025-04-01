@@ -13,7 +13,7 @@ int main() {
 
     // Implementação de Movimentação do Bispo
     // utilizado o laço de repetição ( while ) com inicial 1 para simular movimento de 5 casa na diagonal para cima a direita.
-
+    printf("==================BISPO==================\n"); // separadores para melhor visualização na saida de dados
     while (bispo <= 5)
     {
       printf("Bispo avança %d Casas para cima a direita\n",bispo);
@@ -23,7 +23,7 @@ int main() {
 
     // Implementação de Movimentação da Torre
     // utilizado o laço de repetição ( for ) com inical 1 para simular a movimentação de 5 casas a direita na horizontal.
-
+    printf("\n==================TORRE==================\n"); // separadores para melhor visualização na saida de dados
     for (torre = 1; torre <= 5; torre++)
     {
       printf("Torre avança %d casas para direita!\n", torre);
@@ -31,7 +31,7 @@ int main() {
 
     // Implementação de Movimentação da Rainha
     // utilizado o laço (do-while) para simular a movimentação de 8 casas  para a esquerda.
-
+    printf("\n==================RAINHA==================\n"); // separadores para melhor visualização na saida de dados
     do
     {
       printf("Rainha avança %d casas para a esquerda!\n", rainha);
