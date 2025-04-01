@@ -13,7 +13,7 @@ int main() {
 
     // Implementação de Movimentação do Bispo
     // utilizado o laço de repetição ( while ) com inicial 1 para simular movimento de 5 casa na diagonal para cima a direita.
-    printf("==================BISPO==================\n"); // separadores para melhor visualização na saida de dados
+    printf("==================BISPO==================\n"); // separadores para melhor visualização na saida de dados destacando o nome da peça
     while (bispo <= 5)
     {
       printf("Bispo avança %d Casas para cima a direita\n",bispo);
@@ -23,7 +23,7 @@ int main() {
 
     // Implementação de Movimentação da Torre
     // utilizado o laço de repetição ( for ) com inical 1 para simular a movimentação de 5 casas a direita na horizontal.
-    printf("\n==================TORRE==================\n"); // separadores para melhor visualização na saida de dados
+    printf("\n==================TORRE==================\n"); // separadores para melhor visualização na saida de dados destacando o nome da peça
     for (torre = 1; torre <= 5; torre++)
     {
       printf("Torre avança %d casas para direita!\n", torre);
@@ -31,12 +31,27 @@ int main() {
 
     // Implementação de Movimentação da Rainha
     // utilizado o laço (do-while) para simular a movimentação de 8 casas  para a esquerda.
-    printf("\n==================RAINHA==================\n"); // separadores para melhor visualização na saida de dados
+    printf("\n==================RAINHA==================\n"); // separadores para melhor visualização na saida de dados destacando o nome da peça
     do
     {
       printf("Rainha avança %d casas para a esquerda!\n", rainha);
       rainha++;
     } while (rainha <= 8);
+
+    // Nível Aventureiro - Movimentação do Cavalo
+    // Utilizado o loop aninhado (for) para determinar o movimento.
+    // Um loop representou o movimento vertical para baixo e outro representou o movimento horizontal para a esquerda.
+
+    printf("\n==================CAVALO==================\n");  // separador para determinar o nome da peça
+    for (int lado = 1; lado <= 1; lado++)
+    {
+      for (int baixo = 0; baixo <= lado; baixo++)
+      {
+        printf("Baixo\n");
+      }
+      printf("     esquerda"); //foi incrementado um espaçamento maior no movimento a esquerda, para simular o movimento em "L" do cavalo.      
+    }
+    printf("\n==========================================\n");
 
     
     return 0;
